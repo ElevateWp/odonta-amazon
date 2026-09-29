@@ -18,7 +18,7 @@ const service = SERVICES.find((s) => s.slug === 'braces')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Aparelhos Ortodônticos & Aligners em Manaus | Dr. Fernando',
+  title: 'Aparelhos Ortodônticos & Aligners em Manaus | Our Doctor',
   description:
     'Aparelhos ortodônticos convencionais, estéticos e alinhadores em Manaus com planejamento cuidadoso e atendimento humanizado.',
   pathname: '/braces/',

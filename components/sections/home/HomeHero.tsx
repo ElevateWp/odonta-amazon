@@ -111,8 +111,8 @@ export default function HomeHero() {
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-paper overflow-hidden py-12 sm:py-16 md:py-24"
     >
       <Image
-        src="/images/vitta-treatment-room.png"
-        alt="Sala de atendimento da Studio Oral Vitta"
+        src="/images/clinic-treatment-room-8.jpg"
+        alt="Sala de atendimento da Clínica Oral Integralle"
         fill
         priority
         sizes="100vw"
@@ -120,7 +120,7 @@ export default function HomeHero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-[#FAF9F6]/95 via-[#FAF9F6]/90 to-[#FAF9F6]/80 md:from-[#FAF9F6]/95 md:via-[#FAF9F6]/90 md:to-[#FAF9F6]/78"
+        className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF]/95 via-[#FFFFFF]/90 to-[#FFFFFF]/80 md:from-[#FFFFFF]/95 md:via-[#FFFFFF]/90 md:to-[#FFFFFF]/78"
       />
 
       <div className="relative z-10 max-w-site mx-auto px-4 sm:px-6 md:px-12 w-full">
@@ -129,15 +129,15 @@ export default function HomeHero() {
           <div className="lg:col-span-8 flex flex-col justify-center">
             {/* Semantic Single H1 */}
             <div className="flex items-center gap-3 mb-4 md:mb-5">
-              <span aria-hidden="true" className="h-px w-8 bg-[#B59A6A]" />
-              <span className="font-body text-[11px] text-[#766E63] uppercase tracking-[0.14em]">
+              <span aria-hidden="true" className="h-px w-8 bg-[#D4AF0A]" />
+              <span className="font-body text-[11px] text-[#737373] uppercase tracking-[0.14em]">
                 Your smile. Our priority.
               </span>
             </div>
             <h1
               ref={h1Ref}
               aria-label={headline}
-              className="font-display text-[#2C2925] text-33 sm:text-41 md:text-52 lg:text-65 xl:text-81 leading-[1.05] tracking-[-0.03em] font-normal mb-6 md:mb-8 max-w-4xl"
+              className="font-display text-[#252525] text-33 sm:text-41 md:text-52 lg:text-65 xl:text-81 leading-[1.05] tracking-[-0.03em] font-normal mb-6 md:mb-8 max-w-4xl"
             >
               {headlineWords.map((word, idx) => (
                 <React.Fragment key={idx}>
@@ -146,7 +146,7 @@ export default function HomeHero() {
                       ref={(el) => {
                         if (el) wordsRef.current[idx] = el;
                       }}
-                      className={`inline-block will-change-transform ${['shaped', 'by', 'clinical'].includes(word) ? 'text-[#B59A6A]' : ''}`}
+                      className={`inline-block will-change-transform ${['shaped', 'by', 'clinical'].includes(word) ? 'text-[#D4AF0A]' : ''}`}
                     >
                       {word}
                     </span>
@@ -162,7 +162,7 @@ export default function HomeHero() {
               ref={paraRef}
               className="font-body text-15 sm:text-17 md:text-21 text-forest-ink/90 leading-relaxed mb-8 md:mb-10 max-w-2xl"
             >
-              Na Dental Studio, o Dr. Fernando oferece implantes de carga imediata, atendimento em odontologia domiciliar e aparelhos ortodônticos com cuidado e conforto.
+              A Clínica Odontológica Oral Integralle oferece atendimento odontológico em Chapada, Manaus.
             </p>
 
             <div
@@ -173,7 +173,7 @@ export default function HomeHero() {
                 Agendar Consulta
               </Button>
               <Button
-                href={`https://api.whatsapp.com/send?phone=5568981081266`}
+                href={`https://api.whatsapp.com/send?phone=5592985587841`}
                 variant="ghost"
                 size="lg"
                 className="w-full sm:w-auto font-medium"
@@ -184,13 +184,13 @@ export default function HomeHero() {
 
             <div
               ref={locationRef}
-              className="font-body text-13 text-[#2C2925]/70 flex flex-wrap items-center gap-2"
+              className="font-body text-13 text-[#252525]/70 flex flex-wrap items-center gap-2"
             >
-              <span className="font-medium text-[#2C2925]">Floresta</span>
+              <span className="font-medium text-[#252525]">Chapada, Manaus</span>
               <span className="hidden sm:inline">•</span>
               <span>{CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.suite}</span>
               <span className="hidden sm:inline">•</span>
-              <span className="text-[#2C2925] font-semibold">★ 5.0 (Avaliação Google)</span>
+              <span className="text-[#252525] font-semibold">★ 4.6 · 89 avaliações</span>
             </div>
           </div>
 
@@ -199,16 +199,16 @@ export default function HomeHero() {
             ref={infoRef}
             className="lg:col-span-4 lg:pl-4 flex flex-col justify-center"
           >
-            <div className="p-6 sm:p-8 bg-[#F1EEE8] border border-[#DED6C9] shadow-sm flex flex-col space-y-4">
-              <span className="font-body text-13 text-[#2C2925] uppercase tracking-wider font-semibold">
+            <div className="p-6 sm:p-8 bg-[#F8F7F2] border border-[#E6E1D2] shadow-sm flex flex-col space-y-4">
+              <span className="font-body text-13 text-[#252525] uppercase tracking-wider font-semibold">
                 Destaques Clínicos
               </span>
-              <p className="font-body text-13 sm:text-15 text-[#2C2925]/90 leading-relaxed">
-                <strong className="text-[#2C2925] font-semibold">&ldquo;Studio Oral Vitta&rdquo;</strong> &mdash; Clínica odontológica em Floresta, Rio Branco, Acre.
+              <p className="font-body text-13 sm:text-15 text-[#252525]/90 leading-relaxed">
+                <strong className="text-[#252525] font-semibold">&ldquo;Clínica Odontológica Oral Integralle&rdquo;</strong> &mdash; Clínica odontológica em Chapada, Manaus, Amazonas.
               </p>
-              <div className="pt-3 border-t border-[#DED6C9] flex items-center justify-between text-13 font-body text-[#2C2925]/70">
-                <span>Rio Branco - AC</span>
-                <span className="text-[#2C2925] font-semibold">Avaliação 5.0 ★</span>
+              <div className="pt-3 border-t border-[#E6E1D2] flex items-center justify-between text-13 font-body text-[#252525]/70">
+                <span>Manaus - AM</span>
+                <span className="text-[#252525] font-semibold">Avaliação 4.6 ★ · 89 avaliações</span>
               </div>
             </div>
           </div>

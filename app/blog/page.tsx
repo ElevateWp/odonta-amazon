@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Blog Odontológico & Artigos Clínicos | Dr. Fernando',
+  title: 'Blog Odontológico & Artigos Clínicos | Our Doctor',
   description:
-    'Artigos clínicos sobre implantes com carga imediata em 1 dia, odontologia domiciliar e aparelhos ortodônticos pelo Dr. Fernando.',
+    'Artigos clínicos sobre implantes com carga imediata em 1 dia, odontologia domiciliar e aparelhos ortodônticos pela equipe odontológica.',
   pathname: '/blog/',
 });
 

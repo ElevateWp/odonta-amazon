@@ -21,7 +21,7 @@ export default function HomeLocation() {
               Localização & Horário de Atendimento
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink">
-              Visite o Consultório em Rio Branco
+              Visite a Clínica em Manaus
             </h2>
           </div>
         </AnimateOnScroll>
@@ -105,14 +105,14 @@ export default function HomeLocation() {
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/vitta-clinic-exterior.png"
-                  alt="Studio Oral Vitta - Clínica odontológica em Rio Branco"
+                  src="/images/clinic-sign-16.jpg"
+                  alt="Clínica Odontológica Oral Integralle - Chapada, Manaus"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Studio Oral Vitta • Rio Branco
+                  Oral Integralle • Manaus
                 </div>
               </div>
             </AnimateOnScroll>
@@ -124,10 +124,13 @@ export default function HomeLocation() {
                     Atendimento Odontológico de Excelência
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Clínica odontológica em Floresta
+                    Clínica odontológica em Chapada
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
-                    Studio Oral Vitta, na região de Floresta, em Rio Branco, Acre.
+                    Clínica Odontológica Oral Integralle, na região de Chapada, em Manaus, Amazonas.
+                  </p>
+                  <p className="font-body text-13 text-forest-ink/70 mb-3 leading-relaxed">
+                    Ambiente LGBTQ+ friendly · Identifica-se como empresa de propriedade feminina.
                   </p>
                   <div className="flex items-center gap-2 text-13 font-body text-forest">
                     <span className="w-2 h-2 rounded-full bg-forest animate-pulse" />

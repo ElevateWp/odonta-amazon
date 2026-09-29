@@ -14,9 +14,9 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Sobre o Consultório | Dr. Fernando',
+  title: 'Sobre o Consultório | Our Doctor',
   description:
-    'Conheça o Consultório Odontológico Dr. Fernando em Manaus: referência em implantes de carga imediata em 1 dia, odontologia domiciliar e aparelhos ortodônticos.',
+    'Conheça o Consultório Odontológico Our Doctor em Manaus: referência em implantes de carga imediata em 1 dia, odontologia domiciliar e aparelhos ortodônticos.',
   pathname: '/about/',
 });
 
@@ -24,7 +24,7 @@ const TIMELINE = [
   {
     year: '2012',
     title: 'Fundação do Consultório em Manaus',
-    description: 'Dr. Fernando estabelece a clínica com foco em reabilitação oral, implantodontia de excelência e atendimento odontológico domiciliar.',
+    description: 'Our Doctor estabelece a clínica com foco em reabilitação oral, implantodontia de excelência e atendimento odontológico domiciliar.',
   },
   {
     year: '2016',
@@ -39,7 +39,7 @@ const TIMELINE = [
   {
     year: '2024',
     title: 'Excelência em Ortodontia & Estética',
-    description: 'Integração de aparelhos estéticos, alinhadores e novos protocolos de clareamento e restaurações estéticas com o Dr. Fernando.',
+    description: 'Integração de aparelhos estéticos, alinhadores e novos protocolos de clareamento e restaurações estéticas com a equipe odontológica.',
   },
 ];
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 </span>
                 <WordRevealH1 text="Compromisso com seu sorriso, agilidade e excelência técnica." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Na Dental Studio, Dr. Fernando atende pacientes que buscam tratamentos modernos de implantes de carga imediata, aparelhos ortodônticos e atendimento odontológico acolhedor em Manaus." />
+                  <ScrubbedParagraph text="Na Dental Studio, Our Doctor atende pacientes que buscam tratamentos modernos de implantes de carga imediata, aparelhos ortodônticos e atendimento odontológico acolhedor em Manaus." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
                   </div>
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Responsável Técnico</span>
-                    <span className="font-medium text-forest">Dr. Fernando</span>
+                    <span className="font-medium text-forest">Our Doctor</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Registro</span>
@@ -184,7 +184,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Dr. Fernando */}
+      {/* SECTION 4: Our Doctor */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -194,7 +194,7 @@ export default function AboutPage() {
                   Profissional
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Dr. Fernando
+                  Our Doctor
                 </h2>
               </div>
               <Link
@@ -247,8 +247,8 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
-                      src="/images/vitta-treatment-room.png"
-                      alt="Sala de atendimento odontológico da Studio Oral Vitta"
+                      src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1000"
+                      alt="Sala de atendimento odontológico da Clínica Oral Integralle"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
@@ -282,8 +282,8 @@ export default function AboutPage() {
             <AnimateOnScroll animation="zoom-in" delay={0.1}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/vitta-reception.jpg"
-                  alt="Recepção do consultório"
+                  src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
+                  alt="Área de espera da clínica"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -296,8 +296,8 @@ export default function AboutPage() {
             <AnimateOnScroll animation="zoom-in" delay={0.2}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/vitta-consultation-room.jpg"
-                  alt="Sala de atendimento e avaliação"
+                  src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
+                  alt="Banheiro da clínica"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -310,8 +310,8 @@ export default function AboutPage() {
             <AnimateOnScroll animation="zoom-in" delay={0.3}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/vitta-clinic-exterior.png"
-                  alt="Entrada do consultório"
+                  src="https://images.unsplash.com/photo-1594824813583-e18e3848b814?auto=format&fit=crop&q=80&w=800"
+                  alt="Entrada da Clínica Oral Integralle"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -334,7 +334,7 @@ export default function AboutPage() {
                 Agendamento
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Agende sua avaliação com o Dr. Fernando
+                Agende sua avaliação com a equipe odontológica
               </h2>
               <p className="font-body text-15 text-paper/80 mt-2 max-w-xl">
                 Atendimento no consultório em Manaus e serviço de odontologia domiciliar com agilidade e qualidade.

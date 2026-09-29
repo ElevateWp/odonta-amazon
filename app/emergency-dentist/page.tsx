@@ -10,7 +10,7 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata, generateFaqSchema } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Atendimento Odontológico de Urgência em Manaus | Dr. Fernando',
+  title: 'Atendimento Odontológico de Urgência em Manaus | Our Doctor',
   description:
     'Atendimento odontológico para dor de dente intensa, dente quebrado ou emergências em Manaus. WhatsApp/Telefone: +55 92 99265-6280.',
   pathname: '/emergency-dentist/',
@@ -23,7 +23,7 @@ const EMERGENCY_FAQS = [
   },
   {
     question: 'O consultório oferece atendimento domiciliar de urgência?',
-    answer: 'Sim, o Dr. Fernando realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Manaus.',
+    answer: 'Sim, o A equipe odontológica realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Manaus.',
   },
   {
     question: 'O que fazer caso um dente quebre ou caia por trauma?',
@@ -377,7 +377,7 @@ export default function EmergencyDentistPage() {
             Do not endure severe dental pain.
           </h2>
           <p className="font-body text-15 md:text-17 text-paper/80 mb-8 max-w-xl">
-            Dr. Fernando is here to help relieve your pain and preserve your natural tooth structure.
+            Our Doctor is here to help relieve your pain and preserve your natural tooth structure.
           </p>
           <Button
             href={`tel:${CLINIC_INFO.contact.emergencyPhone.replace(/[^0-9+]/g, '')}`}

@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contato & Localização | Studio Oral Vitta - Rio Branco',
+  title: 'Contato & Localização | Oral Integralle - Manaus',
   description:
-    'Entre em contato com a Studio Oral Vitta em Rio Branco, Acre. Telefone: +55 68 98108-1266.',
+    'Entre em contato com a Clínica Odontológica Oral Integralle em Manaus, Amazonas. Telefone: +55 92 98558-7841.',
   pathname: '/contact/',
 });
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </span>
                 <WordRevealH1 text="Fale com nossa equipe odontológica." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Entre em contato com a Studio Oral Vitta em Rio Branco, Acre.
+                  Entre em contato com a Clínica Odontológica Oral Integralle em Manaus, Amazonas.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                       <div>
                         <span className="font-body text-13 text-forest font-semibold block">WhatsApp Direto</span>
                         <a
-                          href="https://api.whatsapp.com/send?phone=5568981081266"
+                          href="https://api.whatsapp.com/send?phone=5592985587841"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-display text-21 text-forest font-bold hover:underline"
@@ -84,7 +84,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest-ink/60">Seg – Sex (08:00 – 18:00)</span>
+                      <span className="font-body text-13 text-forest-ink/60">Fechada · abre às 8:00 AM</span>
                     </div>
 
                   </div>
@@ -138,13 +138,13 @@ export default function ContactPage() {
                       Localização no Google Maps & Plus Code
                     </span>
                     <h3 className="font-display text-26 text-paper mb-2">
-                      Studio Oral Vitta
+                      Oral Integralle
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
                       {CLINIC_INFO.primaryLocation.directions}
                     </p>
                     <div className="mt-3 inline-flex items-center gap-2 bg-paper/10 px-3 py-1 text-lime font-body text-13">
-                      <span>★ 5.0 Avaliação (5 avaliações no Google)</span>
+                      <span>★ 4.6 Avaliação (89 avaliações no Google)</span>
                     </div>
                   </div>
 
@@ -159,7 +159,7 @@ export default function ContactPage() {
                       Abrir no Google Maps
                     </Button>
                     <a
-                      href="https://api.whatsapp.com/send?phone=5568981081266"
+                      href="https://api.whatsapp.com/send?phone=5592985587841"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-body text-13 text-lime hover:underline font-semibold"

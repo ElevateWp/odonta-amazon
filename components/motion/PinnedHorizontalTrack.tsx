@@ -33,6 +33,7 @@ export default function PinnedHorizontalTrack({
 }: PinnedHorizontalTrackProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(1);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -125,7 +126,30 @@ export default function PinnedHorizontalTrack({
       </div>
 
       {/* Horizontal Track: GSAP scroll on desktop / native touch scroll on mobile+tablet */}
-      <div className="w-full overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0 scrollbar-none" style={{ WebkitOverflowScrolling: 'touch' }}>
+      <div
+        ref={scrollContainerRef}
+        onScroll={(event) => {
+          if (isDesktop) return;
+          const viewport = event.currentTarget;
+          const cards = Array.from(trackRef.current?.children ?? []) as HTMLElement[];
+          if (!cards.length) return;
+
+          const viewportCenter = viewport.getBoundingClientRect().left + viewport.clientWidth / 2;
+          let closestIndex = 0;
+          let closestDistance = Number.POSITIVE_INFINITY;
+          cards.forEach((card, index) => {
+            const rect = card.getBoundingClientRect();
+            const distance = Math.abs(rect.left + rect.width / 2 - viewportCenter);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
+          });
+          setCurrentIndex((current) => current === closestIndex + 1 ? current : closestIndex + 1);
+        }}
+        className="w-full overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0 scrollbar-none"
+        style={{ WebkitOverflowScrolling: 'touch' }}
+      >
         <div
           ref={trackRef}
           className="flex flex-row gap-4 sm:gap-6 px-6 md:px-12 w-max pb-4 lg:pb-0 snap-x snap-mandatory lg:snap-none will-change-transform"
@@ -189,12 +213,26 @@ export default function PinnedHorizontalTrack({
       </div>
 
       {/* Mobile swipe hint — only visible on mobile */}
-      <div className="flex lg:hidden justify-center mt-4 gap-1.5 px-6">
-        {items.map((_, idx) => (
-          <span
-            key={idx}
-            className={`w-2 h-2 rounded-full transition-all ${
-              idx === currentIndex - 1 ? 'bg-[#2C2925] w-4' : 'bg-[#DED6C9]'
+      <div className="flex lg:hidden justify-center mt-4 gap-1.5 px-6" role="group" aria-label="Choose a treatment slide">
+        {items.map((item, idx) => (
+          <button
+            key={item.id}
+            type="button"
+            aria-label={`Go to slide ${idx + 1}: ${item.title}`}
+            aria-current={idx === currentIndex - 1 ? 'true' : undefined}
+            onClick={() => {
+              const viewport = scrollContainerRef.current;
+              const card = trackRef.current?.children[idx] as HTMLElement | undefined;
+              if (!viewport || !card) return;
+
+              const cardRect = card.getBoundingClientRect();
+              const viewportRect = viewport.getBoundingClientRect();
+              const targetLeft = viewport.scrollLeft + cardRect.left - viewportRect.left + cardRect.width / 2 - viewport.clientWidth / 2;
+              viewport.scrollTo({ left: Math.max(0, Math.min(targetLeft, viewport.scrollWidth - viewport.clientWidth)), behavior: 'smooth' });
+              setCurrentIndex(idx + 1);
+            }}
+            className={`h-3 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest ${
+              idx === currentIndex - 1 ? 'bg-[#252525] w-4' : 'bg-[#E6E1D2] w-3'
             }`}
           />
         ))}

@@ -17,9 +17,9 @@ const service = SERVICES.find((s) => s.slug === 'root-canal')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Tratamento de Canal em Manaus | Dr. Fernando',
+  title: 'Tratamento de Canal em Manaus | Our Doctor',
   description:
-    'Tratamento de canal moderno, seguro e sem dor em Manaus com Dr. Fernando na Dental Studio.',
+    'Tratamento de canal moderno, seguro e sem dor em Manaus com a equipe odontológica na Dental Studio.',
   pathname: '/root-canal/',
 });
 
