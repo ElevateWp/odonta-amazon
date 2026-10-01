@@ -21,7 +21,7 @@ export default function HomeLocation() {
               Localização & Horário de Atendimento
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink">
-              Visite a Clínica em Manaus
+              Visite a Clínica em Itapiranga
             </h2>
           </div>
         </AnimateOnScroll>
@@ -40,9 +40,11 @@ export default function HomeLocation() {
                   {CLINIC_INFO.primaryLocation.city} - {CLINIC_INFO.primaryLocation.state},{' '}
                   {CLINIC_INFO.primaryLocation.postalCode}, {CLINIC_INFO.primaryLocation.country}
                 </address>
-                <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
-                  {CLINIC_INFO.primaryLocation.landmarks}
-                </p>
+                {CLINIC_INFO.primaryLocation.landmarks && (
+                  <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
+                    {CLINIC_INFO.primaryLocation.landmarks}
+                  </p>
+                )}
               </div>
             </AnimateOnScroll>
 
@@ -105,14 +107,14 @@ export default function HomeLocation() {
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/clinic-sign-16.jpg"
-                  alt="Clínica Odontológica Oral Integralle - Chapada, Manaus"
+                  src="/images/logo.png"
+                  alt="DentalDreams - Itapiranga"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Oral Integralle • Manaus
+                  DentalDreams • Itapiranga
                 </div>
               </div>
             </AnimateOnScroll>
@@ -124,10 +126,10 @@ export default function HomeLocation() {
                     Atendimento Odontológico de Excelência
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Clínica odontológica em Chapada
+                    Clínica odontológica em Itapiranga
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
-                    Clínica Odontológica Oral Integralle, na região de Chapada, em Manaus, Amazonas.
+                    DentalDreams em Itapiranga, Amazonas.
                   </p>
                   <p className="font-body text-13 text-forest-ink/70 mb-3 leading-relaxed">
                     Ambiente LGBTQ+ friendly · Identifica-se como empresa de propriedade feminina.
@@ -140,7 +142,7 @@ export default function HomeLocation() {
 
                 <div className="pt-4 mt-4 border-t border-mist flex flex-wrap items-center justify-between gap-4">
                   <span className="font-body text-13 text-forest-ink/60">
-                    Plus Code: {CLINIC_INFO.primaryLocation.landmarks}
+                    {CLINIC_INFO.primaryLocation.city}, Amazonas
                   </span>
                   <Button
                     href="/contact/"

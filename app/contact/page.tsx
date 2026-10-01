@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contato & Localização | Oral Integralle - Manaus',
+  title: 'Contato & Localização',
   description:
-    'Entre em contato com a Clínica Odontológica Oral Integralle em Manaus, Amazonas. Telefone: +55 92 98558-7841.',
+    'Entre em contato com a DentalDreams em Itapiranga, Amazonas. Telefone: +55 92 8607-0067.',
   pathname: '/contact/',
 });
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </span>
                 <WordRevealH1 text="Fale com nossa equipe odontológica." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Entre em contato com a Clínica Odontológica Oral Integralle em Manaus, Amazonas.
+                  Entre em contato com a DentalDreams em Itapiranga, Amazonas.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                       <div>
                         <span className="font-body text-13 text-forest font-semibold block">WhatsApp Direto</span>
                         <a
-                          href="https://api.whatsapp.com/send?phone=5592985587841"
+                          href="https://api.whatsapp.com/send?phone=559286070067"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-display text-21 text-forest font-bold hover:underline"
@@ -84,7 +84,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest-ink/60">Fechada · abre às 8:00 AM</span>
+                      <span className="font-body text-13 text-forest-ink/60">Horários de atendimento abaixo</span>
                     </div>
 
                   </div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                     {CLINIC_INFO.primaryLocation.city} - {CLINIC_INFO.primaryLocation.state}, {CLINIC_INFO.primaryLocation.postalCode}, {CLINIC_INFO.primaryLocation.country}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    <strong>Ponto de Referência & Plus Code:</strong> {CLINIC_INFO.primaryLocation.landmarks}
+                    <strong>Localização:</strong> {CLINIC_INFO.primaryLocation.directions}
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -135,10 +135,10 @@ export default function ContactPage() {
                 <div className="p-8 bg-forest text-paper flex flex-col justify-between aspect-[16/10] shadow-sm">
                   <div>
                     <span className="font-body text-13 text-lime block mb-2 font-medium uppercase tracking-wider">
-                      Localização no Google Maps & Plus Code
+                      Localização no Google Maps
                     </span>
                     <h3 className="font-display text-26 text-paper mb-2">
-                      Oral Integralle
+                      {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
                       {CLINIC_INFO.primaryLocation.directions}
@@ -159,7 +159,7 @@ export default function ContactPage() {
                       Abrir no Google Maps
                     </Button>
                     <a
-                      href="https://api.whatsapp.com/send?phone=5592985587841"
+                      href="https://api.whatsapp.com/send?phone=559286070067"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-body text-13 text-lime hover:underline font-semibold"

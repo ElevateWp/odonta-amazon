@@ -1,5 +1,5 @@
 import React from 'react';
-import BeforeAfterSlider from '@/components/motion/BeforeAfterSlider';
+import Image from 'next/image';
 import Link from 'next/link';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
@@ -10,24 +10,14 @@ export default function HomeBeforeAfter() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <AnimateOnScroll animation="fade-right" duration={0.85} className="lg:col-span-5">
             <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-              Documented Clinical Results
+              Imagens ilustrativas
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-              Verified restorative outcomes
+              Cuidado odontológico para cada sorriso
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-              Drag the interactive slider to inspect enamel translucency, gingival margin integration, and anatomical contouring. Every documented case represents actual patient treatment performed at Nova Dental under standardized clinical photography protocols.
+              As fotos desta seção são imagens de banco usadas como referência visual para consultas e cuidados odontológicos. Elas não representam pacientes ou procedimentos realizados na clínica.
             </p>
-            <div className="space-y-3 font-body text-13 text-forest-ink/70 mb-8">
-              <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                <span>Zero digital retouching or artificial smoothing filters.</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                <span>High-precision macro photography under color-calibrated lighting.</span>
-              </div>
-            </div>
             <Link
               href="/cosmetic-dentistry/"
               className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
@@ -37,13 +27,32 @@ export default function HomeBeforeAfter() {
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-left" duration={0.85} className="lg:col-span-7">
-            <BeforeAfterSlider
-              beforeImage="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200"
-              afterImage="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200"
-              beforeLabel="Pre-operative: Fractured & Discolored Enamel"
-              afterLabel="Post-operative: Micro-Layered Porcelain Veneers"
-              clinicalNote="Caso: Reabilitação estética e facetas cerâmicas pela equipe odontológica."
-            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
+                <Image
+                  src="/images/home-illustration-smile-stock.jpg"
+                  alt="Imagem de banco ilustrativa de uma paciente com sua dentista"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <span className="absolute bottom-3 left-3 bg-[#171717]/85 text-white font-body text-12 px-3 py-1">
+                  Imagem ilustrativa
+                </span>
+              </div>
+              <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
+                <Image
+                  src="/images/home-illustration-care-stock.jpg"
+                  alt="Imagem de banco ilustrativa de atendimento odontológico"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <span className="absolute bottom-3 left-3 bg-[#171717]/85 text-white font-body text-12 px-3 py-1">
+                  Imagem ilustrativa
+                </span>
+              </div>
+            </div>
           </AnimateOnScroll>
         </div>
       </div>

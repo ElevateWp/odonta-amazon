@@ -10,24 +10,24 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata, generateFaqSchema } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Atendimento Odontológico de Urgência em Manaus | Our Doctor',
+  title: 'Atendimento Odontológico de Urgência em Itapiranga',
   description:
-    'Atendimento odontológico para dor de dente intensa, dente quebrado ou emergências em Manaus. WhatsApp/Telefone: +55 92 99265-6280.',
+    'Atendimento odontológico para dor de dente intensa, dente quebrado ou emergências em Itapiranga. WhatsApp/Telefone: +55 92 8607-0067.',
   pathname: '/emergency-dentist/',
 });
 
 const EMERGENCY_FAQS = [
   {
     question: 'Como funciona o atendimento de urgência para dor de dente?',
-    answer: 'Pacientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 92 99265-6280) para orientação e agendamento.',
+    answer: 'Pacientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 92 8607-0067) para orientação e agendamento.',
   },
   {
     question: 'O consultório oferece atendimento domiciliar de urgência?',
-    answer: 'Sim, o A equipe odontológica realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Manaus.',
+    answer: 'Sim, o A equipe odontológica realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Itapiranga.',
   },
   {
     question: 'O que fazer caso um dente quebre ou caia por trauma?',
-    answer: 'Segure o dente apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao consultório ou entre em contato pelo nosso WhatsApp (+55 92 99265-6280).',
+    answer: 'Segure o dente apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao consultório ou entre em contato pelo nosso WhatsApp (+55 92 8607-0067).',
   },
 ];
 
@@ -81,7 +81,7 @@ export default function EmergencyDentistPage() {
               <address className="not-italic font-body text-15 text-paper leading-relaxed mb-4">
                 {CLINIC_INFO.name}
                 <br />
-                {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.suite}
+                {CLINIC_INFO.primaryLocation.street}
                 <br />
                 {CLINIC_INFO.primaryLocation.city}, {CLINIC_INFO.primaryLocation.state} {CLINIC_INFO.primaryLocation.postalCode}
               </address>
@@ -261,7 +261,7 @@ export default function EmergencyDentistPage() {
                 Speak directly with our on-call dental team
               </h2>
               <p className="font-body text-17 text-paper/90 leading-relaxed mb-8 max-w-2xl">
-                We accept emergency calls 24 hours a day, 7 days a week. Our clinical staff will immediately assess your symptoms, advise on pain management, and prepare our surgical suite for your arrival.
+                Contact us during our posted hours for emergency appointment guidance. Our clinical staff will immediately assess your symptoms, advise on pain management, and prepare our surgical suite for your arrival.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Button
@@ -290,7 +290,7 @@ export default function EmergencyDentistPage() {
                 Walk-In Triage Policy
               </span>
               <p className="font-body text-13 text-paper/80 leading-relaxed">
-                While we recommend calling ahead so we can prepare a sterile suite, true acute dental trauma walk-ins are welcomed directly at our Civic Center pavilion during business hours.
+                While we recommend calling ahead so we can prepare a sterile suite, true acute dental trauma walk-ins are welcomed directly at {CLINIC_INFO.primaryLocation.directions} during business hours.
               </p>
               </AnimateOnScroll>
             </div>
@@ -311,7 +311,7 @@ export default function EmergencyDentistPage() {
               <address className="not-italic font-body text-15 text-forest-ink/80 leading-relaxed mb-4">
                 {CLINIC_INFO.name}
                 <br />
-                {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.suite}
+                {CLINIC_INFO.primaryLocation.street}
                 <br />
                 {CLINIC_INFO.primaryLocation.city}, {CLINIC_INFO.primaryLocation.state} {CLINIC_INFO.primaryLocation.postalCode}
               </address>
@@ -325,22 +325,12 @@ export default function EmergencyDentistPage() {
               <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
               <span className="font-body text-13 text-forest-ink/60 block mb-2">Operating Hours</span>
               <div className="border border-mist divide-y divide-mist bg-paper font-body text-13">
-                <div className="p-3 flex justify-between">
-                  <span>Monday – Thursday</span>
-                  <span className="tabular-nums">08:00 – 17:30</span>
-                </div>
-                <div className="p-3 flex justify-between">
-                  <span>Friday</span>
-                  <span className="tabular-nums">08:00 – 16:30</span>
-                </div>
-                <div className="p-3 flex justify-between">
-                  <span>Saturday</span>
-                  <span className="tabular-nums">09:00 – 14:00</span>
-                </div>
-                <div className="p-3 flex justify-between bg-mist/40 text-forest font-medium">
-                  <span>Sunday & After-Hours</span>
-                  <span>24/7 On-Call Triage Phone</span>
-                </div>
+                {CLINIC_INFO.schedule.map((item) => (
+                  <div key={item.day} className="p-3 flex justify-between">
+                    <span>{item.day}</span>
+                    <span className="tabular-nums">{item.hours}</span>
+                  </div>
+                ))}
               </div>
               </AnimateOnScroll>
             </div>
@@ -377,7 +367,7 @@ export default function EmergencyDentistPage() {
             Do not endure severe dental pain.
           </h2>
           <p className="font-body text-15 md:text-17 text-paper/80 mb-8 max-w-xl">
-            Our Doctor is here to help relieve your pain and preserve your natural tooth structure.
+            Dr. Daniel can assess the problem and discuss ways to relieve pain and preserve natural tooth structure.
           </p>
           <Button
             href={`tel:${CLINIC_INFO.contact.emergencyPhone.replace(/[^0-9+]/g, '')}`}

@@ -33,7 +33,7 @@ export default function HomeReviews() {
             >
               <div className="flex flex-col justify-between p-8 border border-mist/20 bg-paper/5 h-full hover:bg-paper/10 transition-colors shadow-sm">
                 <div>
-                  <div className="flex items-center gap-1 text-[#E8C51A] text-14 mb-4">
+                  <div className="flex items-center gap-1 text-[#E2C778] text-14 mb-4">
                     ★★★★★
                   </div>
                   <blockquote className="font-display text-20 md:text-23 text-paper leading-relaxed mb-8">

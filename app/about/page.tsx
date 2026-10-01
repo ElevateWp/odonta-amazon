@@ -14,17 +14,17 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Sobre o Consultório | Our Doctor',
+  title: 'Sobre o Consultório',
   description:
-    'Conheça o Consultório Odontológico Our Doctor em Manaus: referência em implantes de carga imediata em 1 dia, odontologia domiciliar e aparelhos ortodônticos.',
+    'Conheça a DentalDreams em Itapiranga e saiba mais sobre o Dr. Daniel e seus atendimentos odontológicos.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
     year: '2012',
-    title: 'Fundação do Consultório em Manaus',
-    description: 'Our Doctor estabelece a clínica com foco em reabilitação oral, implantodontia de excelência e atendimento odontológico domiciliar.',
+    title: 'Fundação do Consultório em Itapiranga',
+    description: 'A clínica inicia sua trajetória com foco em reabilitação oral, implantodontia e atendimento odontológico domiciliar.',
   },
   {
     year: '2016',
@@ -58,7 +58,7 @@ const APPROACH_STEPS = [
   },
   {
     title: 'Atendimento Humanizado no Consultório & Domiciliar',
-    description: 'Cuidado atencioso, seguro e acolhedor na clínica ou no conforto da sua residência em Manaus.',
+    description: 'Cuidado atencioso, seguro e acolhedor na clínica ou no conforto da sua residência em Itapiranga.',
   },
 ];
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 </span>
                 <WordRevealH1 text="Compromisso com seu sorriso, agilidade e excelência técnica." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Na Dental Studio, Our Doctor atende pacientes que buscam tratamentos modernos de implantes de carga imediata, aparelhos ortodônticos e atendimento odontológico acolhedor em Manaus." />
+                  <ScrubbedParagraph text="Na DentalDreams, o Dr. Daniel atende pacientes que buscam implantes de carga imediata, aparelhos ortodônticos e cuidado odontológico em Itapiranga." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -91,8 +91,8 @@ export default function AboutPage() {
                     <span className="font-medium text-forest">{CLINIC_INFO.establishedYear}</span>
                   </div>
                   <div className="flex justify-between border-b border-mist pb-2">
-                    <span>Responsável Técnico</span>
-                    <span className="font-medium text-forest">Our Doctor</span>
+                    <span>Dentista</span>
+                    <span className="font-medium text-forest">Dr. Daniel</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Registro</span>
@@ -184,7 +184,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Our Doctor */}
+      {/* SECTION 4: Dr. Daniel */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -194,7 +194,7 @@ export default function AboutPage() {
                   Profissional
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Our Doctor
+                  Dr. Daniel
                 </h2>
               </div>
               <Link
@@ -227,7 +227,7 @@ export default function AboutPage() {
                   Equipamentos modernos e ambiente acolhedor
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Nosso consultório em Manaus conta com ambiente esterilizado e equipamentos modernos para procedimentos cirúrgicos de implantes, restaurações, canal e ortodontia com total segurança biológica.
+                  Nosso consultório em Itapiranga conta com ambiente esterilizado e equipamentos modernos para procedimentos cirúrgicos de implantes, restaurações, canal e ortodontia com total segurança biológica.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
@@ -248,7 +248,7 @@ export default function AboutPage() {
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
                       src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1000"
-                      alt="Sala de atendimento odontológico da Clínica Oral Integralle"
+                      alt="Sala de atendimento odontológico da Clínica DentalDreams"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
@@ -273,7 +273,7 @@ export default function AboutPage() {
                 Ambiente Clínico
               </span>
               <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                Nosso Espaço em Manaus
+                Nosso Espaço em Itapiranga
               </h2>
             </div>
           </AnimateOnScroll>
@@ -311,7 +311,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="https://images.unsplash.com/photo-1594824813583-e18e3848b814?auto=format&fit=crop&q=80&w=800"
-                  alt="Entrada da Clínica Oral Integralle"
+                  alt="Entrada da Clínica DentalDreams"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -337,7 +337,7 @@ export default function AboutPage() {
                 Agende sua avaliação com a equipe odontológica
               </h2>
               <p className="font-body text-15 text-paper/80 mt-2 max-w-xl">
-                Atendimento no consultório em Manaus e serviço de odontologia domiciliar com agilidade e qualidade.
+                Atendimento no consultório em Itapiranga e serviço de odontologia domiciliar com agilidade e qualidade.
               </p>
             </div>
           </AnimateOnScroll>

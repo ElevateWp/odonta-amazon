@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Clínica Odontológica Oral Integralle | Manaus - AM',
+  title: 'Clínica Odontológica em Itapiranga',
   description:
-    'Clínica Odontológica Oral Integralle (4.6 ★, 89 avaliações no Google Maps), em Chapada, Manaus - AM.',
+    'DentalDreams (4.6 ★, 89 avaliações no Google Maps), em Itapiranga - Amazonas.',
   pathname: '/',
 });
 

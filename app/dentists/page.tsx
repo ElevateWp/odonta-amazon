@@ -12,9 +12,9 @@ import { DENTISTS, SERVICES, CLINIC_INFO } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Equipe Clínica | Our Doctor',
+  title: 'Equipe Clínica',
   description:
-    'Conheço Our Doctor, o profissional da Dental Studio em Manaus.',
+    'Conheça o Dr. Daniel, dentista da DentalDreams em Itapiranga.',
   pathname: '/dentists/',
 });
 
@@ -24,7 +24,7 @@ export default function DentistsPage() {
       {/* SECTION 1: Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Our Doctor', path: '/dentists/' }]} />
+          <Breadcrumbs items={[{ name: 'Dr. Daniel', path: '/dentists/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
@@ -34,7 +34,7 @@ export default function DentistsPage() {
                 </span>
                 <WordRevealH1 text="Atendimento odontológico dedicado, ágil e humanizado." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Our Doctor atende na Dental Studio, oferecendo cuidado odontológico acolhedor em Manaus." />
+                  <ScrubbedParagraph text="O Dr. Daniel atende na DentalDreams, oferecendo cuidado odontológico acolhedor em Itapiranga." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -44,7 +44,7 @@ export default function DentistsPage() {
                 <div className="p-6 bg-paper border border-mist space-y-2 font-body text-13 text-forest-ink/80 shadow-sm">
                   <span className="font-medium text-forest block">Atendimento odontológico</span>
                   <p className="text-forest-ink/70">
-                    Atendimento realizado na Dental Studio, com atendimento em consultório e serviço domiciliar.
+                    Atendimento realizado na DentalDreams, com atendimento em consultório e serviço domiciliar.
                   </p>
                 </div>
               </AnimateOnScroll>
@@ -62,7 +62,7 @@ export default function DentistsPage() {
                 Perfil do Profissional
               </span>
               <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                Our Doctor
+                Dr. Daniel
               </h2>
             </div>
           </AnimateOnScroll>
@@ -117,7 +117,7 @@ export default function DentistsPage() {
                     Odontologia Domiciliar
                   </h3>
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed mb-4">
-                    Atendimento domiciliar humanizado e completo em Manaus para pacientes que necessitam de cuidados em casa.
+                    Atendimento domiciliar humanizado e completo em Itapiranga para pacientes que necessitam de cuidados em casa.
                   </p>
                 </div>
                 <Link href="/contact/" className="font-body text-13 text-forest font-medium hover:underline">
@@ -219,7 +219,7 @@ export default function DentistsPage() {
                   “Implantes carga imediata pode trazer seu sorriso em 1 dia — unindo tecnologia, agilidade e o acolhimento que você merece.”
                 </span>
                 <span className="font-body text-13 text-forest block mt-2 font-medium">
-                  — Our Doctor, Responsável Técnico
+                  — Dr. Daniel
                 </span>
               </div>
             </div>

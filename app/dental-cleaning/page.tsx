@@ -17,9 +17,9 @@ const service = SERVICES.find((s) => s.slug === 'dental-cleaning')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Limpeza Dental & Profilaxia em Manaus | Our Doctor',
+  title: 'Limpeza Dental & Profilaxia em Itapiranga',
   description:
-    'Profilaxia e limpeza dental com ultrassom para prevenção de tártaro e gengivite no Consultório Odontológico Our Doctor em Manaus.',
+    'Profilaxia e limpeza dental com ultrassom para prevenção de tártaro e gengivite no DentalDreams em Itapiranga.',
   pathname: '/dental-cleaning/',
 });
 

@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Our Doctor',
+      name: author?.name || 'Dr. Daniel',
     },
     publisher: {
       '@type': 'Organization',

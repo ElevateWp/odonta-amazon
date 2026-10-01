@@ -10,17 +10,17 @@ import { generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL('https://dentalstudiomanaus.com.br'),
   title: {
-    default: 'Oral Integralle | Clínica Odontológica em Manaus',
-    template: '%s | Oral Integralle',
+    default: 'DentalDreams | Clínica Odontológica em Itapiranga',
+    template: '%s',
   },
   description:
-    'Clínica Odontológica Oral Integralle, em Chapada, Manaus - Amazonas. Telefone: +55 92 98558-7841.',
+    'DentalDreams, em Itapiranga - Amazonas. Telefone: +55 92 8607-0067.',
   keywords: [
-    'Clínica Odontológica Oral Integralle',
-    'Clínica Odontológica Manaus',
-    'Dentista Chapada Manaus',
+    'DentalDreams',
+    'Clínica Odontológica Itapiranga',
+    'Dentista Itapiranga, Amazonas',
   ],
-  authors: [{ name: 'Clínica Odontológica Oral Integralle' }],
+  authors: [{ name: 'DentalDreams' }],
   icons: {
     icon: [
       { url: '/images/logo.png', sizes: '32x32', type: 'image/png' },
@@ -46,7 +46,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F8F7F2] selection:text-[#252525]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F7F4EC] selection:text-[#202020]">
         <PagePreloader />
         <JsonLd data={generateLocalBusinessSchema()} />
         <a href="#main-content" className="skip-link">

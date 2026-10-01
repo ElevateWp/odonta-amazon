@@ -72,7 +72,7 @@ export function generateLocalBusinessSchema() {
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: `${CLINIC_INFO.primaryLocation.street}, ${CLINIC_INFO.primaryLocation.suite}`,
+      streetAddress: CLINIC_INFO.primaryLocation.street,
       addressLocality: CLINIC_INFO.primaryLocation.city,
       addressRegion: CLINIC_INFO.primaryLocation.state,
       postalCode: CLINIC_INFO.primaryLocation.postalCode,
@@ -84,18 +84,12 @@ export function generateLocalBusinessSchema() {
       longitude: CLINIC_INFO.primaryLocation.coordinates.lng,
     } } : {}),
     openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '18:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Saturday'],
-        opens: '08:00',
-        closes: '12:00',
-      },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Monday', opens: '15:00', closes: '22:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Tuesday', opens: '15:00', closes: '22:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Wednesday', opens: '09:00', closes: '17:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Thursday', opens: '09:00', closes: '17:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: '15:00', closes: '22:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '12:00' },
     ],
     medicalSpecialty: [
       'Dentistry',
