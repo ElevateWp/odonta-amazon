@@ -9,10 +9,10 @@ export default function HomeGallery() {
       <div className="max-w-site mx-auto px-6 md:px-12">
         <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-16">
           <span className="font-body text-13 text-[#173B2A] block mb-2 font-medium uppercase tracking-wider">
-            Imagens ilustrativas
+            Fotos da clínica Odonto Amazon
           </span>
           <h2 className="font-display text-33 md:text-41 text-[#173B2A]">
-            Atendimento odontológico em imagens
+            Nossa clínica e nossos atendimentos
           </h2>
         </AnimateOnScroll>
 
@@ -22,15 +22,15 @@ export default function HomeGallery() {
           <AnimateOnScroll animation="fade-right" duration={0.85} className="md:col-span-5 min-h-[380px] md:min-h-[440px] relative bg-[#F3FAF6] overflow-hidden border border-[#D7E8DC] shadow-sm">
             <MediaParallax speed={0.06} className="w-full h-full">
               <Image
-                src="/images/home-gallery-doctor-stock.jpg"
-                alt="Imagem de banco ilustrativa de atendimento odontológico"
+                src="/images/odonto-amazon-clinic-entry.jpg"
+                alt="Clínica Odonto Amazon"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover object-top"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#173B2A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Imagem ilustrativa · Atendimento odontológico
+              Clínica Odonto Amazon
             </div>
           </AnimateOnScroll>
 
@@ -38,15 +38,15 @@ export default function HomeGallery() {
           <AnimateOnScroll animation="fade-down" duration={0.85} className="md:col-span-7 min-h-[380px] md:min-h-[440px] relative bg-[#D7E8DC] overflow-hidden border border-[#D7E8DC] shadow-sm">
             <MediaParallax speed={0.08} className="w-full h-full">
               <Image
-                src="/images/home-gallery-consult-stock.jpg"
-                alt="Imagem de banco ilustrativa de consulta odontológica"
+                src="/images/odonto-amazon-reception.jpg"
+                alt="Recepção da clínica Odonto Amazon"
                 fill
                 sizes="(max-width: 768px) 100vw, 60vw"
                 className="object-cover"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#173B2A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Imagem ilustrativa · Consulta odontológica
+              Recepção da clínica
             </div>
           </AnimateOnScroll>
         </div>
@@ -57,15 +57,15 @@ export default function HomeGallery() {
           <AnimateOnScroll animation="zoom-in" duration={0.8} className="aspect-[4/3] relative bg-[#D7E8DC] overflow-hidden border border-[#D7E8DC] shadow-sm">
             <MediaParallax speed={0.05} className="w-full h-full">
               <Image
-                src="/images/home-gallery-smile-stock.jpg"
-                alt="Imagem de banco ilustrativa de orientação odontológica"
+                src="/images/odonto-amazon-reception-care.jpg"
+                alt="Atendimento na recepção da Odonto Amazon"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#173B2A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Imagem ilustrativa · Orientação odontológica
+              Atendimento na recepção
             </div>
           </AnimateOnScroll>
 
@@ -73,15 +73,15 @@ export default function HomeGallery() {
           <AnimateOnScroll animation="zoom-in" duration={0.8} delay={0.1} className="aspect-[4/3] relative bg-[#D7E8DC] overflow-hidden border border-[#D7E8DC] shadow-sm">
             <MediaParallax speed={0.07} className="w-full h-full">
               <Image
-                src="/images/home-gallery-patient-stock.jpg"
-                alt="Imagem de banco ilustrativa de atendimento ao paciente"
+                src="/images/odonto-amazon-dentist-patient.jpg"
+                alt="Dentista com paciente na Odonto Amazon"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#173B2A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Imagem ilustrativa · Atendimento ao paciente
+              Atendimento personalizado
             </div>
           </AnimateOnScroll>
 
@@ -89,15 +89,15 @@ export default function HomeGallery() {
           <AnimateOnScroll animation="zoom-in" duration={0.8} delay={0.2} className="aspect-[4/3] relative bg-[#F3FAF6] overflow-hidden border border-[#D7E8DC] shadow-sm sm:col-span-2 md:col-span-1">
             <MediaParallax speed={0.06} className="w-full h-full">
               <Image
-                src="/images/home-gallery-clinic-stock.jpg"
-                alt="Imagem de banco ilustrativa de atendimento odontológico"
+                src="/images/odonto-amazon-child-care.jpg"
+                alt="Clínica Odonto Amazon"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover object-top"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#173B2A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Imagem ilustrativa · Atendimento odontológico
+              Clínica Odonto Amazon
             </div>
           </AnimateOnScroll>
         </div>

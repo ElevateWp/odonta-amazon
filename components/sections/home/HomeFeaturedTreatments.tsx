@@ -9,7 +9,7 @@ export default function HomeFeaturedTreatments() {
       <div className="max-w-site mx-auto px-6 md:px-12">
         <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-16">
           <span className="font-body text-13 text-[#173B2A] block mb-2 font-medium uppercase tracking-wider">
-            Imagens ilustrativas
+            Atendimento na Odonto Amazon
           </span>
           <h2 className="font-display text-33 md:text-41 text-[#173B2A]">
             Tratamentos e reconstruções clínicas
@@ -42,8 +42,8 @@ export default function HomeFeaturedTreatments() {
             <AnimateOnScroll animation="fade-left" duration={0.9} className="lg:col-span-6 order-1 lg:order-2">
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/home-feature-implants-stock.jpg"
-                  alt="Imagem de banco ilustrativa de atendimento odontológico"
+                  src="/images/odonto-amazon-reception-care.jpg"
+                  alt="Atendimento na clínica Odonto Amazon"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-top"
@@ -57,8 +57,8 @@ export default function HomeFeaturedTreatments() {
             <AnimateOnScroll animation="fade-right" duration={0.9} className="lg:col-span-6">
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/home-feature-orthodontics-stock.jpg"
-                  alt="Imagem de banco ilustrativa de consulta odontológica"
+                  src="/images/odonto-amazon-dentist-patient.jpg"
+                  alt="Dentista com paciente na Odonto Amazon"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"

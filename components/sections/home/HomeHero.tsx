@@ -111,8 +111,8 @@ export default function HomeHero() {
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-paper overflow-hidden py-12 sm:py-16 md:py-24"
     >
       <Image
-        src="/images/home-hero-stock.jpg"
-        alt="Imagem de banco ilustrativa de atendimento odontológico"
+        src="/images/odonto-amazon-exterior.jpg"
+        alt="Fachada da clínica Odonto Amazon em Manaus"
         fill
         priority
         sizes="100vw"

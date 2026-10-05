@@ -57,7 +57,7 @@ export default function HomeWhyUs() {
             </AnimateOnScroll>
           </div>
 
-          {/* Stock photos shown for illustration */}
+          {/* Fotos reais da clínica Odonto Amazon */}
           <div className="lg:col-span-6">
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="grid grid-cols-2 gap-3">
@@ -65,22 +65,22 @@ export default function HomeWhyUs() {
                 <div className="col-span-2 relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
-                      src="/images/home-why-care-stock.jpg"
-                      alt="Imagem de banco ilustrativa de atendimento odontológico"
+                      src="/images/odonto-amazon-child-care.jpg"
+                      alt="Atendimento odontológico infantil na Odonto Amazon"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-[#173B2A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Imagem ilustrativa · Atendimento odontológico
+                    Atendimento odontológico infantil
                   </div>
                 </div>
                 {/* Second interior image */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/home-why-consult-stock.jpg"
-                    alt="Imagem de banco ilustrativa de consulta odontológica"
+                    src="/images/odonto-amazon-reception.jpg"
+                    alt="Recepção da clínica Odonto Amazon"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
@@ -89,14 +89,14 @@ export default function HomeWhyUs() {
                 {/* Doctor portrait */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3FAF6] overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/home-why-treatment-stock.jpg"
-                    alt="Imagem de banco ilustrativa de atendimento a um paciente"
+                    src="/images/odonto-amazon-dentist-patient.jpg"
+                    alt="Dentista com paciente na Odonto Amazon"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-[#173B2A]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                    Imagem ilustrativa · Atendimento
+                    Dentista com paciente
                   </div>
                 </div>
               </div>
