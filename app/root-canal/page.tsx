@@ -17,9 +17,9 @@ const service = SERVICES.find((s) => s.slug === 'root-canal')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Tratamento de Canal em Itapiranga',
+  title: 'Tratamento de Canal em Manaus',
   description:
-    'Tratamento de canal moderno, seguro e sem dor em Itapiranga com a equipe odontológica na DentalDreams.',
+    'Tratamento de canal moderno, seguro e sem dor em Manaus com a equipe odontológica na Odonto Amazon.',
   pathname: '/root-canal/',
 });
 

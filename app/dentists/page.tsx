@@ -14,7 +14,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Equipe Clínica',
   description:
-    'Conheça o Dr. Daniel, dentista da DentalDreams em Itapiranga.',
+    'Conheça Dra. Leandro Leite Filho, dentista da Odonto Amazon em Manaus.',
   pathname: '/dentists/',
 });
 
@@ -24,7 +24,7 @@ export default function DentistsPage() {
       {/* SECTION 1: Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Dr. Daniel', path: '/dentists/' }]} />
+          <Breadcrumbs items={[{ name: 'Dentistas', path: '/dentists/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
@@ -34,7 +34,7 @@ export default function DentistsPage() {
                 </span>
                 <WordRevealH1 text="Atendimento odontológico dedicado, ágil e humanizado." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="O Dr. Daniel atende na DentalDreams, oferecendo cuidado odontológico acolhedor em Itapiranga." />
+                  <ScrubbedParagraph text="Dra. Leandro Leite Filho atende na Odonto Amazon, em Manaus." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -44,7 +44,7 @@ export default function DentistsPage() {
                 <div className="p-6 bg-paper border border-mist space-y-2 font-body text-13 text-forest-ink/80 shadow-sm">
                   <span className="font-medium text-forest block">Atendimento odontológico</span>
                   <p className="text-forest-ink/70">
-                    Atendimento realizado na DentalDreams, com atendimento em consultório e serviço domiciliar.
+                    Atendimento realizado na Odonto Amazon, com atendimento em consultório e serviço domiciliar.
                   </p>
                 </div>
               </AnimateOnScroll>
@@ -59,15 +59,15 @@ export default function DentistsPage() {
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <div className="mb-16">
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                Perfil do Profissional
+                Nossa equipe
               </span>
               <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                Dr. Daniel
+                Conheça nosso dentista
               </h2>
             </div>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 gap-10 max-w-xl mx-auto pb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto pb-8">
             {DENTISTS.map((dentist, idx) => (
               <DentistCard
                 key={dentist.id}
@@ -117,7 +117,7 @@ export default function DentistsPage() {
                     Odontologia Domiciliar
                   </h3>
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed mb-4">
-                    Atendimento domiciliar humanizado e completo em Itapiranga para pacientes que necessitam de cuidados em casa.
+                    Atendimento domiciliar humanizado e completo em Manaus para pacientes que necessitam de cuidados em casa.
                   </p>
                 </div>
                 <Link href="/contact/" className="font-body text-13 text-forest font-medium hover:underline">
@@ -219,7 +219,7 @@ export default function DentistsPage() {
                   “Implantes carga imediata pode trazer seu sorriso em 1 dia — unindo tecnologia, agilidade e o acolhimento que você merece.”
                 </span>
                 <span className="font-body text-13 text-forest block mt-2 font-medium">
-                  — Dr. Daniel
+                  — Dra. Leandro Leite Filho
                 </span>
               </div>
             </div>

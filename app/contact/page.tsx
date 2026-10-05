@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contato & Localização',
   description:
-    'Entre em contato com a DentalDreams em Itapiranga, Amazonas. Telefone: +55 92 8607-0067.',
+    'Entre em contato com a Odonto Amazon em Manaus, Amazonas. Telefone: +55 92 99229-3563.',
   pathname: '/contact/',
 });
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </span>
                 <WordRevealH1 text="Fale com nossa equipe odontológica." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Entre em contato com a DentalDreams em Itapiranga, Amazonas.
+                  Entre em contato com a Odonto Amazon em Manaus, Amazonas.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                       <div>
                         <span className="font-body text-13 text-forest font-semibold block">WhatsApp Direto</span>
                         <a
-                          href="https://api.whatsapp.com/send?phone=559286070067"
+                          href="https://api.whatsapp.com/send?phone=5592992293563"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-display text-21 text-forest font-bold hover:underline"
@@ -143,9 +143,6 @@ export default function ContactPage() {
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
                       {CLINIC_INFO.primaryLocation.directions}
                     </p>
-                    <div className="mt-3 inline-flex items-center gap-2 bg-paper/10 px-3 py-1 text-lime font-body text-13">
-                      <span>★ 4.6 Avaliação (89 avaliações no Google)</span>
-                    </div>
                   </div>
 
                   <div className="pt-6 border-t border-mist/20 flex flex-wrap items-center justify-between gap-4">
@@ -159,7 +156,7 @@ export default function ContactPage() {
                       Abrir no Google Maps
                     </Button>
                     <a
-                      href="https://api.whatsapp.com/send?phone=559286070067"
+                      href="https://api.whatsapp.com/send?phone=5592992293563"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-body text-13 text-lime hover:underline font-semibold"

@@ -74,62 +74,58 @@ export interface ClinicInformation {
 }
 
 export const CLINIC_INFO: ClinicInformation = {
-  name: "DentalDreams",
-  legalName: "DentalDreams",
-  tagline: "Clínica odontológica em Itapiranga, Amazonas.",
-  establishedYear: 2018,
+  name: "Odonto Amazon",
+  legalName: "Odonto Amazon",
+  tagline: "Clínica odontológica em Manaus, Amazonas.",
+  establishedYear: 1993,
   primaryLocation: {
-    street: "Rua Antônio de Almeida Santos",
+    street: "R. Loris Cordovil, 26 - Alvorada",
     suite: "",
-    city: "Itapiranga",
-    state: "Amazonas",
-    postalCode: "69120000",
-    country: "Brazil",
-    directions: "Rua Antônio de Almeida Santos, Itapiranga, Amazonas, Brazil 69120000",
-    landmarks: "",
+    city: "Manaus",
+    state: "AM",
+    postalCode: "69043-010",
+    country: "Brasil",
+    directions: "R. Loris Cordovil, 26 - Alvorada, Manaus - AM, 69043-010, Brasil.",
+    landmarks: "WX97+WH Alvorada, Manaus - Amazonas, Brasil.",
   },
   contact: {
-    phone: "+55 92 8607-0067",
-    emergencyPhone: "+55 92 8607-0067",
-    whatsapp: "+55 92 8607-0067",
+    phone: "+55 92 99229-3563",
+    emergencyPhone: "+55 92 99229-3563",
+    whatsapp: "+55 92 99229-3563",
   },
   schedule: [
-    { day: "Thursday", hours: "09:00 – 17:00" },
-    { day: "Friday", hours: "15:00 – 22:00" },
-    { day: "Saturday", hours: "09:00 – 12:00" },
-    { day: "Sunday", hours: "Closed" },
-    { day: "Monday", hours: "15:00 – 22:00" },
-    { day: "Tuesday", hours: "15:00 – 22:00" },
-    { day: "Wednesday", hours: "09:00 – 17:00" },
+    { day: "Monday", hours: "Abre às 08:00" },
+    { day: "Tuesday", hours: "Consulte a clínica" },
+    { day: "Wednesday", hours: "Consulte a clínica" },
+    { day: "Thursday", hours: "Consulte a clínica" },
+    { day: "Friday", hours: "Consulte a clínica" },
+    { day: "Saturday", hours: "Consulte a clínica" },
+    { day: "Sunday", hours: "Fechado" },
   ],
-  verifiedStats: [
-    { value: 4.6, suffix: " ★", label: "Avaliação no Google", description: "Nota 4.6 com base em 89 avaliações no Google Maps." },
-    { value: 89, suffix: "", label: "Avaliações no Google", description: "89 avaliações compartilhadas no Google Maps." },
-  ],
+  verifiedStats: [],
   accreditations: [
-    "Clínica odontológica em Itapiranga, Amazonas",
+    "Clínica odontológica em Manaus, Amazonas",
     "Atendimento conforme informações da clínica",
-    "Avaliação 4.6 Estrelas no Google Maps · 89 avaliações",
-    "Itapiranga - Amazonas",
+    "R. Loris Cordovil, 26 - Alvorada, Manaus - AM, 69043-010, Brasil.",
   ],
 };
 
 export const DENTISTS: DentistProfile[] = [
   {
-    id: "dental-studio-doctor",
-    slug: "dental-studio-doctor",
-    name: "Dr. Daniel",
+    id: "dra-leandro-leite-filho",
+    slug: "dra-leandro-leite-filho",
+    name: "Dra. Leandro Leite Filho",
     title: "Dentista",
     qualifications: "",
     specialization: "Atendimento odontológico",
     experienceYears: 0,
-    bio: "A equipe da DentalDreams oferece atendimento odontológico acolhedor.",
+    bio: "Dentista da Odonto Amazon, em Manaus.",
     philosophy: "Atendimento acolhedor, respeitoso e atento às necessidades de cada paciente.",
-    education: ["Informações profissionais serão adicionadas em breve."],
+    education: [],
     memberships: [],
     specialties: ["Atendimento odontológico"],
-    image: "/images/dr-daniel.png",
-    warmImage: "/images/dr-daniel.png",
+    image: "/images/dra-leandro-leite-filho.png",
+    warmImage: "/images/dra-leandro-leite-filho.png",
   },
 ];
 
@@ -140,7 +136,7 @@ export const SERVICES: ServiceDetail[] = [
     navLabel: "Dental Implants",
     tagline: "Implantes carga imediata pode trazer seu sorriso em 1 dia com fixação precisa em titânio e zircônia.",
     shortDescription: "Substituição definitiva de dentes com tecnologia de carga imediata que pode devolver seu sorriso e mastigação em apenas 1 dia.",
-    clinicalExplanation: "Os implantes dentários do DentalDreams utilizam fixações de titânio biocompatível e zircônia com planejamento de ponta. Com a técnica de carga imediata, o paciente pode recuperar seu sorriso e conforto mastigatório em 1 dia, com total estabilidade e estética natural sem desgastar dentes sadios adjacentes.",
+    clinicalExplanation: "Os implantes dentários do Odonto Amazon utilizam fixações de titânio biocompatível e zircônia com planejamento de ponta. Com a técnica de carga imediata, o paciente pode recuperar seu sorriso e conforto mastigatório em 1 dia, com total estabilidade e estética natural sem desgastar dentes sadios adjacentes.",
     whoNeeds: [
       "Pacientes com perda de um ou mais dentes por cárie, trauma ou retração.",
       "Pessoas que buscam dentes fixos e recuperação rápida através de implantes de carga imediata em 1 dia.",
@@ -194,7 +190,7 @@ export const SERVICES: ServiceDetail[] = [
       { period: "Acompanhamento Contínuo", expectedSensations: "Sensação idêntica aos dentes naturais.", careProtocol: "Consultas de rotina semestrais para manutenção preventiva." },
     ],
     costTransparency: {
-      baseRange: "Valores personalizados com excelente custo-benefício em Itapiranga",
+      baseRange: "Valores personalizados com excelente custo-benefício em Manaus",
       factors: [
         "Complexidade cirúrgica e necessidade de enxerto ósseo prévio.",
         "Tipo de material protético escolhido (zircônia pura, metalocerâmica).",
@@ -293,7 +289,7 @@ export const SERVICES: ServiceDetail[] = [
       { period: "Após Restauração", expectedSensations: "Dente saudável, funcional e totalmente sem dor.", careProtocol: "Manter acompanhamento clínico de rotina." },
     ],
     costTransparency: {
-      baseRange: "Valores justos e excelente custo-benefício em Itapiranga",
+      baseRange: "Valores justos e excelente custo-benefício em Manaus",
       factors: [
         "Número de raízes e canais do dente (anterior, pré-molar ou molar).",
         "Grau de calcificação ou necessidade de retratamento.",
@@ -332,7 +328,7 @@ export const SERVICES: ServiceDetail[] = [
     navLabel: "Teeth Whitening",
     tagline: "Clareamento dental seguro e monitorado para um sorriso iluminado com proteção ao esmalte.",
     shortDescription: "Técnicas de clareamento em consultório e caseiro supervisionado para remoção de manchas e rejuvenescimento do sorriso sem agredir os dentes.",
-    clinicalExplanation: "O clareamento dental no DentalDreams utiliza géis clareadores certificados e proteção gengival rigorosa. Supervisionado pela equipe odontológica, o procedimento quebra moléculas de pigmentos acumuladas por café, chá e tempo sem alterar a densidade mineral do esmalte.",
+    clinicalExplanation: "O clareamento dental no Odonto Amazon utiliza géis clareadores certificados e proteção gengival rigorosa. Supervisionado pela equipe odontológica, o procedimento quebra moléculas de pigmentos acumuladas por café, chá e tempo sem alterar a densidade mineral do esmalte.",
     whoNeeds: [
       "Pessoas com dentes amarelados ou escurecidos por alimentação e hábitos diários.",
       "Pacientes que desejam valorizar o sorriso para eventos e autoestima.",
@@ -462,7 +458,7 @@ export const SERVICES: ServiceDetail[] = [
       { period: "Manutenção", expectedSensations: "Gengivas saudáveis sem sangramento.", careProtocol: "Escovação 3x ao dia e uso diário do fio dental." },
     ],
     costTransparency: {
-      baseRange: "Preço justo e acessível em Itapiranga",
+      baseRange: "Preço justo e acessível em Manaus",
       factors: ["Profilaxia simples de rotina vs. raspagem periodontal profunda."],
       whatIsIncluded: [
         "Avaliação completa da saúde bucal",
@@ -491,8 +487,8 @@ export const SERVICES: ServiceDetail[] = [
     name: "Aparelhos Ortodônticos & Aligners",
     navLabel: "Braces & Orthodontics",
     tagline: "Aparelhos ortodônticos convencionais, estéticos e alinhadores para o alinhamento ideal do seu sorriso.",
-    shortDescription: "Tratamento ortodôntico completo em Itapiranga com aparelhos metálicos, cerâmicos e alinhadores invisíveis para corrigir apinhamento, mordida e estética facial.",
-    clinicalExplanation: "O tratamento com aparelhos ortodônticos corrige o posicionamento dos dentes e das bases ósseas, proporcionando uma mordida equilibrada e um sorriso harmônico. Na DentalDreams, A equipe odontológica oferece opções metálicas, estéticas e alinhadores modernos.",
+    shortDescription: "Tratamento ortodôntico completo em Manaus com aparelhos metálicos, cerâmicos e alinhadores invisíveis para corrigir apinhamento, mordida e estética facial.",
+    clinicalExplanation: "O tratamento com aparelhos ortodônticos corrige o posicionamento dos dentes e das bases ósseas, proporcionando uma mordida equilibrada e um sorriso harmônico. Na Odonto Amazon, A equipe odontológica oferece opções metálicas, estéticas e alinhadores modernos.",
     whoNeeds: [
       "Dentes tortos, apinhados ou com espaços (diastemas).",
       "Problemas de mordida cruzada, sobremordida ou mordida aberta.",
@@ -542,7 +538,7 @@ export const SERVICES: ServiceDetail[] = [
       { period: "Ao Longo do Tratamento", expectedSensations: "Evolução visível no alinhamento mês a mês.", careProtocol: "Higienização cuidadosa com escova ortodôntica e fio dental." },
     ],
     costTransparency: {
-      baseRange: "Mensalidades acessíveis e condições facilitadas em Itapiranga",
+      baseRange: "Mensalidades acessíveis e condições facilitadas em Manaus",
       factors: ["Tipo de aparelho (metálico convencional, estético de safira/cerâmica ou alinhador)."],
       whatIsIncluded: [
         "Planejamento ortodôntico completo",
@@ -553,7 +549,7 @@ export const SERVICES: ServiceDetail[] = [
     },
     beforeAfterCase: {
       category: "Ortodontia",
-      clinicalContext: "Correção completa de apinhamento e mordida com aparelho ortodôntico em Itapiranga.",
+      clinicalContext: "Correção completa de apinhamento e mordida com aparelho ortodôntico em Manaus.",
       beforeLabel: "Pré-tratamento: Dentes Apinhados",
       afterLabel: "Pós-tratamento: Arcada Alinhada e Harmônica",
       beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
@@ -572,7 +568,7 @@ export const SERVICES: ServiceDetail[] = [
     navLabel: "Cosmetic Dentistry",
     tagline: "Lentes de contato dental, facetas em resina e cerâmica com planejamento estético.",
     shortDescription: "Reabilitação estética personalizada para transformar forma, cor e alinhamento do sorriso com naturalidade e alta resistência.",
-    clinicalExplanation: "A odontologia estética no DentalDreams combina arte, precisão e materiais de alta tecnologia. Conduzido pela equipe odontológica, o tratamento com facetas e restaurações estéticas reproduz a textura e translucidez do esmalte natural com mínima intervenção.",
+    clinicalExplanation: "A odontologia estética no Odonto Amazon combina arte, precisão e materiais de alta tecnologia. Conduzido pela equipe odontológica, o tratamento com facetas e restaurações estéticas reproduz a textura e translucidez do esmalte natural com mínima intervenção.",
     whoNeeds: [
       "Dentes desgastados, fraturados ou com formato irregular.",
       "Manchas resistentes que não saem com clareamento convencional.",
@@ -622,7 +618,7 @@ export const SERVICES: ServiceDetail[] = [
       { period: "Longo Prazo", expectedSensations: "Sensação e função completamente naturais.", careProtocol: "Consultas semestrais para polimento e controle." },
     ],
     costTransparency: {
-      baseRange: "Orçamentos claros e facilitados em Itapiranga",
+      baseRange: "Orçamentos claros e facilitados em Manaus",
       factors: ["Número de dentes envolvidos e tipo de material (resina composta estratificada ou cerâmica pura)."],
       whatIsIncluded: [
         "Planejamento estético individualizado",
@@ -668,7 +664,7 @@ export const EMERGENCY_CONDITIONS: EmergencyCondition[] = [
       "Sensibilidade extrema ao calor e ao frio",
     ],
     immediateAction: [
-      "Entre em contato pelo nosso WhatsApp ou telefone +55 92 98479-8868.",
+      "Entre em contato pelo nosso WhatsApp ou telefone +55 92 99229-3563.",
       "Faça bochechos suaves com água morna.",
       "Aplique compressa fria no lado externo da bochecha (nunca coloque calor).",
     ],
@@ -685,7 +681,7 @@ export const EMERGENCY_CONDITIONS: EmergencyCondition[] = [
     immediateAction: [
       "Segure o dente apenas pela coroa, nunca pela raiz.",
       "Guarde o dente em leite ou saliva e venha imediatamente ao consultório.",
-      "Ligue para o nosso número de emergência: +55 92 98479-8868.",
+      "Ligue para o nosso número de emergência: +55 92 99229-3563.",
     ],
     clinicTreatment: "Reimplante imediato com contenção flexível ou reconstrução estética de urgência.",
   },
@@ -713,7 +709,7 @@ export const EMERGENCY_CONDITIONS: EmergencyCondition[] = [
       "Febre ou gosto ruim na boca",
     ],
     immediateAction: [
-      "Ligue imediatamente para nosso plantão de atendimento (+55 92 98479-8868).",
+      "Ligue imediatamente para nosso plantão de atendimento (+55 92 99229-3563).",
       "Use compressa fria externamente; NÃO aplique calor.",
       "Mantenha a cabeça elevada ao deitar.",
     ],
@@ -752,7 +748,7 @@ export const BLOG_POSTS: BlogPost[] = [
     leadImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
     relatedServiceSlug: "dental-implants",
     content: {
-      intro: "A tecnologia de implantes dentários com carga imediata representa uma grande evolução para quem deseja rapidez e conforto na reposição de dentes. Sob os protocolos a equipe odontológica em Itapiranga, é possível recuperar seu sorriso em 1 dia.",
+      intro: "A tecnologia de implantes dentários com carga imediata representa uma grande evolução para quem deseja rapidez e conforto na reposição de dentes. Sob os protocolos a equipe odontológica em Manaus, é possível recuperar seu sorriso em 1 dia.",
       sections: [
         {
           heading: "O que é Carga Imediata?",
@@ -798,7 +794,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "clear-aligner-biomechanics-for-adults",
-    title: "Aparelhos Ortodônticos em Itapiranga: Alinhamento para Todas as Idades",
+    title: "Aparelhos Ortodônticos em Manaus: Alinhamento para Todas as Idades",
     category: "Braces & Orthodontics",
     readTime: "6 min de leitura",
     publishDate: "2026-06-20",
@@ -825,11 +821,11 @@ export const BLOG_POSTS: BlogPost[] = [
     publishDate: "2026-05-10",
     lastUpdated: "2026-09-01",
     authorId: "dental-studio-doctor",
-    excerpt: "Como funciona o atendimento de odontologia domiciliar para idosos e pacientes com dificuldade de locomoção em Itapiranga.",
+    excerpt: "Como funciona o atendimento de odontologia domiciliar para idosos e pacientes com dificuldade de locomoção em Manaus.",
     leadImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800",
     relatedServiceSlug: "cosmetic-dentistry",
     content: {
-      intro: "A equipe odontológica realiza atendimentos de odontologia domiciliar em Itapiranga, levando consultório portátil e cuidado humanizado até a residência dos pacientes.",
+      intro: "A equipe odontológica realiza atendimentos de odontologia domiciliar em Manaus, levando consultório portátil e cuidado humanizado até a residência dos pacientes.",
       sections: [
         {
           heading: "Quem Pode se Beneficiar?",
@@ -842,17 +838,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const PATIENT_REVIEWS = [
   {
-    id: "review-1",
-    author: "Deysiane Evellyn",
-    treatment: "Avaliação no Google · 7 meses atrás",
-    quote: "Maravilhosa, a melhor dentista que já conheci. Minha filha, que tinha muito medo de dentista, sente-se segura com ela e perdeu o medo. Ela exerce a profissão com amor.",
+    id: "review-klicia-costa",
+    author: "Klicia Costa",
+    treatment: "Avaliação no Google · 10 meses atrás",
+    quote: "Sou profundamente grata pelo excelente atendimento dado ao meu filho autista, com atenção, carinho, paciência e sensibilidade.",
     year: "★★★★★",
   },
   {
-    id: "review-2",
-    author: "Suellen Vinente",
-    treatment: "Avaliação no Google · 8 meses atrás",
-    quote: "Atendimento impecável, profissionais altamente capacitados e uma clínica excelente.",
+    id: "review-luiz-moreira",
+    author: "Luiz Moreira",
+    treatment: "Avaliação no Google · 6 meses atrás",
+    quote: "Uma experiência alegre, com recepção agradável e médicos muito profissionais e atenciosos. Voltei a sorrir com confiança.",
     year: "★★★★★",
   },
 ];

@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Clínica Odontológica em Itapiranga',
+  title: 'Clínica Odontológica em Manaus',
   description:
-    'DentalDreams (4.6 ★, 89 avaliações no Google Maps), em Itapiranga - Amazonas.',
+    'Odonto Amazon, clínica odontológica em Manaus - Amazonas.',
   pathname: '/',
 });
 

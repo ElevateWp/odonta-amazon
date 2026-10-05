@@ -8,26 +8,26 @@ import JsonLd from '@/components/ui/JsonLd';
 import { generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dentalstudiomanaus.com.br'),
+  metadataBase: new URL('http://127.0.0.1:3001'),
   title: {
-    default: 'DentalDreams | Clínica Odontológica em Itapiranga',
+    default: 'Odonto Amazon | Clínica Odontológica em Manaus',
     template: '%s',
   },
   description:
-    'DentalDreams, em Itapiranga - Amazonas. Telefone: +55 92 8607-0067.',
+    'Odonto Amazon, em Manaus - Amazonas. Telefone: +55 92 99229-3563.',
   keywords: [
-    'DentalDreams',
-    'Clínica Odontológica Itapiranga',
-    'Dentista Itapiranga, Amazonas',
+    'Odonto Amazon',
+    'Clínica Odontológica Manaus',
+    'Dentista Manaus, Amazonas',
   ],
-  authors: [{ name: 'DentalDreams' }],
+  authors: [{ name: 'Odonto Amazon' }],
   icons: {
     icon: [
-      { url: '/images/logo.png', sizes: '32x32', type: 'image/png' },
-      { url: '/images/logo.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
     ],
-    shortcut: [{ url: '/images/logo.png', type: 'image/png' }],
-    apple: [{ url: '/images/logo.png', sizes: '180x180', type: 'image/png' }],
+    shortcut: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    apple: [{ url: '/icon.png', sizes: '180x180', type: 'image/png' }],
   },
 };
 
@@ -46,7 +46,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F7F4EC] selection:text-[#202020]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3FAF6] selection:text-[#173B2A]">
         <PagePreloader />
         <JsonLd data={generateLocalBusinessSchema()} />
         <a href="#main-content" className="skip-link">
@@ -54,7 +54,7 @@ export default function RootLayout({
         </a>
         <LenisProvider>
           <Navbar />
-          <main id="main-content" className="flex-grow pt-[72px]">
+          <main id="main-content" className="flex-grow pt-[88px] sm:pt-[100px] md:pt-[112px]">
             {children}
           </main>
           <Footer />

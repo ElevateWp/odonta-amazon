@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Agendar Consulta Odontológica',
   description:
-    'Solicite seu agendamento para implantes de carga imediata em 1 dia, odontologia domiciliar ou aparelhos ortodônticos com a equipe odontológica em Itapiranga.',
+    'Solicite seu agendamento para implantes de carga imediata em 1 dia, odontologia domiciliar ou aparelhos ortodônticos com a equipe odontológica em Manaus.',
   pathname: '/book-appointment/',
 });
 
@@ -54,7 +54,7 @@ export default function BookAppointmentPage() {
                 </span>
                 <WordRevealH1 text="Reserve sua avaliação odontológica." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Agende sua consulta para implantes de carga imediata (recuperação do sorriso em 1 dia), avaliação ortodôntica ou solicite atendimento domiciliar em Itapiranga com a equipe odontológica." />
+                  <ScrubbedParagraph text="Agende sua consulta para implantes de carga imediata (recuperação do sorriso em 1 dia), avaliação ortodôntica ou solicite atendimento domiciliar em Manaus com a equipe odontológica." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -67,7 +67,7 @@ export default function BookAppointmentPage() {
                     Prefere falar diretamente conosco agora? Clique abaixo para abrir o WhatsApp.
                   </p>
                   <a
-                    href="https://api.whatsapp.com/send?phone=559286070067"
+                    href="https://api.whatsapp.com/send?phone=5592992293563"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-display text-17 text-forest font-semibold block hover:underline"
@@ -145,7 +145,7 @@ export default function BookAppointmentPage() {
                 <div className="space-y-3 font-body text-13 text-forest-ink/80">
                   <div>
                     <span className="text-forest-ink/60 block">WhatsApp:</span>
-                    <a href="https://api.whatsapp.com/send?phone=559286070067" target="_blank" rel="noopener noreferrer" className="font-medium text-forest hover:underline">
+                    <a href="https://api.whatsapp.com/send?phone=5592992293563" target="_blank" rel="noopener noreferrer" className="font-medium text-forest hover:underline">
                       {CLINIC_INFO.contact.whatsapp}
                     </a>
                   </div>
@@ -179,7 +179,7 @@ export default function BookAppointmentPage() {
             <AnimateOnScroll animation="fade-up" delay={0.3}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
                 <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Localização</span>
-                <h3 className="font-display text-21 text-forest-ink mb-4">DentalDreams em Itapiranga</h3>
+                <h3 className="font-display text-21 text-forest-ink mb-4">Odonto Amazon em Manaus</h3>
                 <address className="not-italic font-body text-13 text-forest-ink/80 leading-relaxed mb-3">
                   {CLINIC_INFO.primaryLocation.street}
                   <br />

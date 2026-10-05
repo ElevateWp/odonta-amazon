@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { CLINIC_INFO } from './clinic-data';
 
-export const BASE_URL = 'https://dentalstudiomanaus.com.br';
+export const BASE_URL = 'http://127.0.0.1:3001';
 
 export function createMetadata({
   title,
@@ -16,7 +16,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/og-nova-dental.jpg`;
+  const defaultImage = `${BASE_URL}/images/logo.png`;
 
   return {
     title: fullTitle,
@@ -84,12 +84,7 @@ export function generateLocalBusinessSchema() {
       longitude: CLINIC_INFO.primaryLocation.coordinates.lng,
     } } : {}),
     openingHoursSpecification: [
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Monday', opens: '15:00', closes: '22:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Tuesday', opens: '15:00', closes: '22:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Wednesday', opens: '09:00', closes: '17:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Thursday', opens: '09:00', closes: '17:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: '15:00', closes: '22:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '12:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Monday', opens: '08:00' },
     ],
     medicalSpecialty: [
       'Dentistry',

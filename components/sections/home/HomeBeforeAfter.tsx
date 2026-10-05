@@ -36,7 +36,7 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#171717]/85 text-white font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#0D3B25]/85 text-white font-body text-12 px-3 py-1">
                   Imagem ilustrativa
                 </span>
               </div>
@@ -48,7 +48,7 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#171717]/85 text-white font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#0D3B25]/85 text-white font-body text-12 px-3 py-1">
                   Imagem ilustrativa
                 </span>
               </div>

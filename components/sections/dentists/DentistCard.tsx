@@ -34,9 +34,11 @@ export default function DentistCard({ dentist, offsetY = false }: DentistCardPro
             }`}
           />
 
-          <div className="absolute top-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium shadow-sm">
-            {dentist.qualifications}
-          </div>
+          {dentist.qualifications && (
+            <div className="absolute top-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium shadow-sm">
+              {dentist.qualifications}
+            </div>
+          )}
 
           {dentist.experienceYears > 0 && (
             <div className="absolute bottom-3 right-3 bg-forest text-paper font-body text-13 px-2.5 py-0.5">

@@ -129,15 +129,15 @@ export default function HomeHero() {
           <div className="lg:col-span-8 flex flex-col justify-center">
             {/* Semantic Single H1 */}
             <div className="flex items-center gap-3 mb-4 md:mb-5">
-              <span aria-hidden="true" className="h-px w-8 bg-[#C9A64C]" />
-              <span className="font-body text-[11px] text-[#77736A] uppercase tracking-[0.14em]">
+              <span aria-hidden="true" className="h-px w-8 bg-[#28A745]" />
+              <span className="font-body text-[11px] text-[#687A70] uppercase tracking-[0.14em]">
                 Your smile. Our priority.
               </span>
             </div>
             <h1
               ref={h1Ref}
               aria-label={headline}
-              className="font-display text-[#202020] text-33 sm:text-41 md:text-52 lg:text-65 xl:text-81 leading-[1.05] tracking-[-0.03em] font-normal mb-6 md:mb-8 max-w-4xl"
+              className="font-display text-[#173B2A] text-33 sm:text-41 md:text-52 lg:text-65 xl:text-81 leading-[1.05] tracking-[-0.03em] font-normal mb-6 md:mb-8 max-w-4xl"
             >
               {headlineWords.map((word, idx) => (
                 <React.Fragment key={idx}>
@@ -146,7 +146,7 @@ export default function HomeHero() {
                       ref={(el) => {
                         if (el) wordsRef.current[idx] = el;
                       }}
-                      className={`inline-block will-change-transform ${['shaped', 'by', 'clinical'].includes(word) ? 'text-[#C9A64C]' : ''}`}
+                      className={`inline-block will-change-transform ${['shaped', 'by', 'clinical'].includes(word) ? 'text-[#28A745]' : ''}`}
                     >
                       {word}
                     </span>
@@ -162,7 +162,7 @@ export default function HomeHero() {
               ref={paraRef}
               className="font-body text-15 sm:text-17 md:text-21 text-forest-ink/90 leading-relaxed mb-8 md:mb-10 max-w-2xl"
             >
-              A DentalDreams oferece atendimento odontológico em Itapiranga.
+              A Odonto Amazon oferece atendimento odontológico em Manaus.
             </p>
 
             <div
@@ -173,7 +173,7 @@ export default function HomeHero() {
                 Agendar Consulta
               </Button>
               <Button
-                href={`https://api.whatsapp.com/send?phone=559286070067`}
+                href={`https://api.whatsapp.com/send?phone=5592992293563`}
                 variant="ghost"
                 size="lg"
                 className="w-full sm:w-auto font-medium"
@@ -184,13 +184,12 @@ export default function HomeHero() {
 
             <div
               ref={locationRef}
-              className="font-body text-13 text-[#202020]/70 flex flex-wrap items-center gap-2"
+              className="font-body text-13 text-[#173B2A]/70 flex flex-wrap items-center gap-2"
             >
-              <span className="font-medium text-[#202020]">Itapiranga</span>
+              <span className="font-medium text-[#173B2A]">Manaus</span>
               <span className="hidden sm:inline">•</span>
               <span>{CLINIC_INFO.primaryLocation.street}</span>
               <span className="hidden sm:inline">•</span>
-              <span className="text-[#202020] font-semibold">★ 4.6 · 89 avaliações</span>
             </div>
           </div>
 
@@ -199,16 +198,16 @@ export default function HomeHero() {
             ref={infoRef}
             className="lg:col-span-4 lg:pl-4 flex flex-col justify-center"
           >
-            <div className="p-6 sm:p-8 bg-[#F7F4EC] border border-[#E5DDCB] shadow-sm flex flex-col space-y-4">
-              <span className="font-body text-13 text-[#202020] uppercase tracking-wider font-semibold">
+            <div className="p-6 sm:p-8 bg-[#F3FAF6] border border-[#D7E8DC] shadow-sm flex flex-col space-y-4">
+              <span className="font-body text-13 text-[#173B2A] uppercase tracking-wider font-semibold">
                 Destaques Clínicos
               </span>
-              <p className="font-body text-13 sm:text-15 text-[#202020]/90 leading-relaxed">
-                <strong className="text-[#202020] font-semibold">&ldquo;DentalDreams&rdquo;</strong> &mdash; Clínica odontológica em Itapiranga, Amazonas.
+              <p className="font-body text-13 sm:text-15 text-[#173B2A]/90 leading-relaxed">
+                <strong className="text-[#173B2A] font-semibold">&ldquo;Odonto Amazon&rdquo;</strong> &mdash; Clínica odontológica em Manaus, Amazonas.
               </p>
-              <div className="pt-3 border-t border-[#E5DDCB] flex items-center justify-between text-13 font-body text-[#202020]/70">
-                <span>Itapiranga - Amazonas</span>
-                <span className="text-[#202020] font-semibold">Avaliação 4.6 ★ · 89 avaliações</span>
+              <div className="pt-3 border-t border-[#D7E8DC] flex items-center justify-between text-13 font-body text-[#173B2A]/70">
+                <span>Manaus - Amazonas</span>
+                <span className="text-[#173B2A] font-semibold">Atendimento em Manaus</span>
               </div>
             </div>
           </div>

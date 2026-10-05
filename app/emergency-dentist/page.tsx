@@ -10,24 +10,24 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata, generateFaqSchema } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Atendimento Odontológico de Urgência em Itapiranga',
+  title: 'Atendimento Odontológico de Urgência em Manaus',
   description:
-    'Atendimento odontológico para dor de dente intensa, dente quebrado ou emergências em Itapiranga. WhatsApp/Telefone: +55 92 8607-0067.',
+    'Atendimento odontológico para dor de dente intensa, dente quebrado ou emergências em Manaus. WhatsApp/Telefone: +55 92 99229-3563.',
   pathname: '/emergency-dentist/',
 });
 
 const EMERGENCY_FAQS = [
   {
     question: 'Como funciona o atendimento de urgência para dor de dente?',
-    answer: 'Pacientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 92 8607-0067) para orientação e agendamento.',
+    answer: 'Pacientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 92 99229-3563) para orientação e agendamento.',
   },
   {
     question: 'O consultório oferece atendimento domiciliar de urgência?',
-    answer: 'Sim, o A equipe odontológica realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Itapiranga.',
+    answer: 'Sim, o A equipe odontológica realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Manaus.',
   },
   {
     question: 'O que fazer caso um dente quebre ou caia por trauma?',
-    answer: 'Segure o dente apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao consultório ou entre em contato pelo nosso WhatsApp (+55 92 8607-0067).',
+    answer: 'Segure o dente apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao consultório ou entre em contato pelo nosso WhatsApp (+55 92 99229-3563).',
   },
 ];
 
@@ -367,7 +367,7 @@ export default function EmergencyDentistPage() {
             Do not endure severe dental pain.
           </h2>
           <p className="font-body text-15 md:text-17 text-paper/80 mb-8 max-w-xl">
-            Dr. Daniel can assess the problem and discuss ways to relieve pain and preserve natural tooth structure.
+            Our dental team can assess the problem and discuss ways to relieve pain and preserve natural tooth structure.
           </p>
           <Button
             href={`tel:${CLINIC_INFO.contact.emergencyPhone.replace(/[^0-9+]/g, '')}`}

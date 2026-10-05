@@ -162,7 +162,7 @@ export default function BookingForm() {
           required
         />
         {errors.fullName && (
-          <span className="font-body text-13 text-[#77736A] transition-all duration-200">
+          <span className="font-body text-13 text-[#687A70] transition-all duration-200">
             {errors.fullName}
           </span>
         )}
@@ -187,7 +187,7 @@ export default function BookingForm() {
             required
           />
           {errors.phone && (
-            <span className="font-body text-13 text-[#77736A]">{errors.phone}</span>
+            <span className="font-body text-13 text-[#687A70]">{errors.phone}</span>
           )}
         </div>
 
@@ -208,7 +208,7 @@ export default function BookingForm() {
             required
           />
           {errors.email && (
-            <span className="font-body text-13 text-[#77736A]">{errors.email}</span>
+            <span className="font-body text-13 text-[#687A70]">{errors.email}</span>
           )}
         </div>
       </div>
@@ -253,7 +253,7 @@ export default function BookingForm() {
             required
           />
           {errors.preferredDate && (
-            <span className="font-body text-13 text-[#77736A]">{errors.preferredDate}</span>
+            <span className="font-body text-13 text-[#687A70]">{errors.preferredDate}</span>
           )}
         </div>
 

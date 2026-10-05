@@ -33,7 +33,7 @@ export default function BlogIndexPage() {
                 </span>
                 <WordRevealH1 text="Artigos e orientações sobre saúde bucal." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Informações claras sobre técnicas de implantes de carga imediata para recuperação do sorriso em 1 dia, odontologia domiciliar e aparelhos ortodônticos em Itapiranga.
+                  Informações claras sobre técnicas de implantes de carga imediata para recuperação do sorriso em 1 dia, odontologia domiciliar e aparelhos ortodônticos em Manaus.
                 </p>
               </AnimateOnScroll>
             </div>
